@@ -1,20 +1,11 @@
-# First, ignore everything
-*
-# Now, whitelist anything that is a directory.
-!*/
-!.gitignore
+*.sln
+*.sdf
+*.suo
+*TP_ThirdPerson_Preview.png
 
-# To-do: Find a better way to do this.
-
-#Including the source files (C++).
-!Source/*
-!Source/UnrealWarcraft/*
-!Source/UnrealWarcraft/Private/*
-!Source/UnrealWarcraft/Public/*
-!Source/UnrealWarcraft/Resources/*
-!Source/UnrealWarcraft/Resources/Windows/*
-!UnrealWarcraft.uproject
-
-!Config/*
-
-!Content/Blueprints/*
+BackupContent/*
+Binaries/*
+Content/StarterContent/*
+DerivedDataCache/*
+Intermediate/*
+Saved/*
