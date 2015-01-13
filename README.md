@@ -1,4 +1,7 @@
 # UnrealWarcaft
+
+A Project for integrating World of Warcraft with the Unreal Engine 4.
+
 The main repository for UnrealWarcraft. Contains the Unreal Engine 4.6.1 C++ files, content and tools.
 
 #How to install:
