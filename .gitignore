@@ -13,6 +13,7 @@
 !Source/UnrealWarcraft/Public/*
 !Source/UnrealWarcraft/Resources/*
 !Source/UnrealWarcraft/Resources/Windows/*
+!UnrealWarcraft.uproject
 
 !Config/*
 

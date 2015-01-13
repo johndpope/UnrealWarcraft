@@ -1,0 +1,13 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{CB2097BC-48D9-C93F-CDFD-A79495BE4754}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "UnrealWarcraft",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
