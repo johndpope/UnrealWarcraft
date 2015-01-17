@@ -1,0 +1,95 @@
+SkinColour:
+    - Element 5: LongCloak_Tail
+    - Element 13: NoCloak_Tail
+    - Element 16: Legs
+    - Element 19: LeftArmParts_01
+    - Element 21: UpperBack
+    - Element 22: LowerArms
+    - Element 34: SideOfHead_Horns01
+    - Element 45: SideOfHead_Horns02
+    - Element 47: UpperBody
+    - Element 60: Ears
+    - Element 75: RightArmParts_Feet
+    
+EyeColour:
+    - Element 36: Eyelids
+    - Element 38: DKEyeGlow
+    
+
+HairColour:
+    - Element 2: Back Hair
+
+Ornaments:
+    - Element 11: Nosering_01
+    - Element 35: Nosering_02
+    - Element 37: Nosering_03
+    - Element 39: Nosering_04
+
+HairStyles:
+    FacialHair:
+        - Element 25: FacialHair_01
+        - Element 32: FacialHair_02
+        - Element 48: FacialHair_03
+        - Element 51: FacialHair_04
+        - Element 52: FacialHair_05
+        - Element 53: FacialHair_06
+        - Element 56: FacialHair_07
+        - Element 63: FacialHair_08
+        - Element 65: FacialHair_09
+        - Element 68: FacialHair_10
+        - Element 69: FacialHair_11
+        - Element 70: FacialHair_12
+        - Element 73: FacialHair_13
+        - Element 74: FacialHair_14
+    
+    Horns:
+        - Element 28: CappedHorns_01
+            - Element 27: HornCaps_01
+            
+        - Element 33: TexasLonghorn
+        - Element 42: HarpHorns
+        - Element 43: JuniorHorns
+        - Element 44: BullHorns_01
+        - Element 46: DualSnappedHorns
+        - Element 50: ChargerHorns_01
+        - Element 57: ChargerHorns_02
+        - Element 58: DualCappedHorns
+        - Element 59: SadHorns
+        - Element 61: ThickWithARingHorns
+        - Element 71: SingleSnappedHorns
+        - Element 72: BullHorns_02  
+  
+  
+Clothing:
+    - Element 0: BigPants
+    - Element 4: ShortPants_Rim
+    - Element 5: LongCloak_Tail
+    - Element 12: BigBoots_Top
+    - Element 15: LongRobes_Bottom
+    - Element 18: LargeGloves_Top
+    - Element 20: SmallShirtRim_01
+    - Element 23: LongRobes_Sleeves_01
+    - Element 24: MediumGloves_Top
+    - Element 29: MediumSplitCloak
+    - Element 30: SmallSplitCloak
+    - Element 40: MediumCloak
+    - Element 49: MediumShirtRim_01
+    - Element 54: LongCloak
+    - Element 55: BigBelt
+    - Element 66: BigBracers
+    - Element 67: LongRobes_Sleeves_02
+
+Unknown:
+    - Element 1:
+    - Element 3:
+    - Element 7:
+    - Element 8:
+    - Element 9:
+    - Element 10:
+    - Element 14:
+    - Element 17:
+    - Element 26:
+    - Element 41:
+    - Element 62:
+    - Element 64:
+    
