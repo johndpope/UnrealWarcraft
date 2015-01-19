@@ -4,7 +4,7 @@ A Project for integrating World of Warcraft with the Unreal Engine 4.
 
 The main repository for UnrealWarcraft. Contains the Unreal Engine C++ project files, content and tools.
 
-#How to install:
+#How to install
 
 Clone this repository to a directory.
 
