@@ -8,6 +8,8 @@ class AUnrealWarcraftCharacter : public ACharacter
 {
 	GENERATED_UCLASS_BODY()
 
+		
+
 	/** Camera boom positioning the camera behind the character */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	TSubobjectPtr<class USpringArmComponent> CameraBoom;
@@ -24,6 +26,7 @@ class AUnrealWarcraftCharacter : public ACharacter
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	float BaseLookUpRate;
 
+
 protected:
 
 	/** Called for forwards/backward input */
@@ -31,6 +34,12 @@ protected:
 
 	/** Called for side to side input */
 	void MoveRight(float Value);
+
+	/** Called for side to side input */
+	void SwimUp(float Value);
+
+	/** Called for side to side input */
+	void SwimDown(float Value);
 
 	/** 
 	 * Called via input to turn at a given rate. 
@@ -44,8 +53,12 @@ protected:
 	 */
 	void LookUpAtRate(float Rate);
 
+
+
 	/* Super documented function for sprinting.*/
+	//UFUNCTION()
 	void StartSprint();
+	//UFUNCTION()
 	void EndSprint();
 
 	/** Handler for when a touch input begins. */

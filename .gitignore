@@ -1,11 +1,14 @@
 *.sln
 *.sdf
 *.suo
+*.opensdf
+*.txt
 *TP_ThirdPerson_Preview.png
 
 BackupContent/*
 Binaries/*
 Content/StarterContent/*
+Content/Warcraft/*
 DerivedDataCache/*
 Intermediate/*
 Saved/*

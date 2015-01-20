@@ -10,6 +10,7 @@
 AUnrealWarcraftCharacter::AUnrealWarcraftCharacter(const class FPostConstructInitializeProperties& PCIP)
 	: Super(PCIP)
 {
+	bReplicates = true;
 	// Set size for collision capsule
 	CapsuleComponent->InitCapsuleSize(42.f, 96.0f);
 
@@ -57,8 +58,9 @@ void AUnrealWarcraftCharacter::SetupPlayerInputComponent(class UInputComponent* 
 	InputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
 	InputComponent->BindAction("Sprint", IE_Pressed, this, &AUnrealWarcraftCharacter::StartSprint);
 	InputComponent->BindAction("Sprint", IE_Released, this, &AUnrealWarcraftCharacter::EndSprint);
+	InputComponent->BindAxis("SwimUp", this, &AUnrealWarcraftCharacter::SwimUp);
+	InputComponent->BindAxis("SwimDown", this, &AUnrealWarcraftCharacter::SwimDown);
 	//InputComponent->BindAction("Use", IE_Pressed, this, &AUnrealWarcraftCharacter::Use);
-
 	InputComponent->BindAxis("MoveForward", this, &AUnrealWarcraftCharacter::MoveForward);
 	InputComponent->BindAxis("MoveRight", this, &AUnrealWarcraftCharacter::MoveRight);
 
@@ -123,5 +125,46 @@ void AUnrealWarcraftCharacter::MoveRight(float Value)
 		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
 		// add movement in that direction
 		AddMovementInput(Direction, Value);
+	}
+}
+
+void AUnrealWarcraftCharacter::SwimUp(float Value)
+{
+	UCharacterMovementComponent* movement = this->GetCharacterMovement();
+	if (movement->IsInWater())
+	{
+		/*if (GEngine)
+		{
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, TEXT("CLASS LOADED")); //Debug code
+		}*/
+
+		FRotator Rotation = Controller->GetControlRotation();
+
+		Rotation.Pitch = 0.0f;
+
+		const FVector Direction = FRotationMatrix(Rotation).GetScaledAxis(EAxis::Z);
+
+		//add movement upwards
+		AddMovementInput(Direction, Value);
+	}
+}
+
+void AUnrealWarcraftCharacter::SwimDown(float Value)
+{
+	UCharacterMovementComponent* movement = this->GetCharacterMovement();
+	if (movement->IsInWater())
+	{
+		/*if (GEngine)
+		{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, TEXT("Test")); //Debug code
+		}*/
+
+		FRotator Rotation = Controller->GetControlRotation();
+
+		Rotation.Pitch = 0.0f;
+
+		const FVector Direction = FRotationMatrix(Rotation).GetScaledAxis(EAxis::Z);
+
+		AddMovementInput(Direction, -Value);
 	}
 }
