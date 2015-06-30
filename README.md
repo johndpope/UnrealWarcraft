@@ -1,3 +1,6 @@
+# Currently
+Once WMV will receive FBX exportation, I will recode the program to utilize UE4, and add it to the UnrealWarcraft Github team. The Unreal Engine Warcraft gamemode is currently on halt until this happends.
+
 # UnrealWarcaft
 
 A Project for integrating World of Warcraft with the Unreal Engine 4.
